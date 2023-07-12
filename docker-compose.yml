@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  photos:
+    image: httpd:2.4 
+    restart: always
+    ports: 
+      - 9980:80
+    container_name: photos 
+    volumes:
+      - ./website:/usr/local/apache2/htdocs
