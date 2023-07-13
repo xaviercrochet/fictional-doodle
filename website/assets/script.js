@@ -1,4 +1,10 @@
-window.onload = function(){  
+
+window.onload = function(){
+	$(function() {
+		$('.lazy').Lazy();
+	});
+
+
 	var modal = document.getElementById("imageModal");
 	var modalImg = document.getElementById("modalImg");
 
